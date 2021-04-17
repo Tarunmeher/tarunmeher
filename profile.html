@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: auto;
+            background-image: linear-gradient(rgb(172, 122, 172), white, white, white, rgb(150, 83, 150));
+            background-repeat: no-repeat;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .profileImg {
+            width: 200px;
+            height: 200px;
+            border-radius: 120px;
+            background-color: white;
+            position: absolute;
+            z-index: 2;
+            top: 30px;
+            left: 3%;
+            box-shadow: 7px 15px 5px gray;
+            padding: 5px;
+            background-image: url('img/profilePic.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .info {
+            width: 95%;
+            margin: auto;
+            margin-top: 100px;
+            min-height: 600px;
+            box-shadow: 0px 0px 1px gray;
+            background-color: white;
+            padding: 10px;
+
+        }
+
+        .detail {
+            margin-top: 120px;
+            padding: 15px;
+        }
+
+        h2,
+        h4 {
+            color: purple;
+            display: inline-block;
+        }
+
+        .horLine {
+            background-color: purple;
+            margin: auto;
+            margin-top: 10px;
+            padding: 2px;
+        }
+
+        .detail span {
+            color: gray;
+            display: block;
+        }
+
+        .detail strong {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info">
+        <div class="detail">
+            <h2>Sushree Sangita Patra</h2>
+            <div>
+                <span>sushreesangitapatra@gmail.com <i class="fa fa-envelope" aria-hidden="true"></i></span>
+                <span>+91 9777911188 <i class="fa fa-mobile" aria-hidden="true"></i></span>
+                <span>Horoscope : <img width='14px'
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTQ3MiA0MzBjMCAxMS4zMjItNC40MzggMjEuOTM4LTEyLjQ5NyAyOS44OTMtOC4wNTYgNy45NTItMTguNzE2IDEyLjIwNy0zMC4wNjcgMTIuMTA0LTIyLjg0OC0uMjk3LTQxLjQzNi0xOS41NTEtNDEuNDM2LTQyLjkyMXYtMzM5LjA3NmMwLTQ5LjYyNi00MC4zNzQtOTAtOTAtOTBzLTkwIDQwLjM3NC05MCA5MHYyMDYuODc0Yy0yMi4xMDgtMjAuMzk1LTUxLjYyMi0zMi44NzQtODQtMzIuODc0LTY4LjM3NCAwLTEyNCA1NS42MjYtMTI0IDEyNHM1NS42MjYgMTI0IDEyNCAxMjQgMTI0LTU1LjYyNiAxMjQtMTI0di0yOThjMC0yNy41NyAyMi40My01MCA1MC01MHM1MCAyMi40MyA1MCA1MHYzMzkuMDc2YzAgNDUuMTQyIDM2LjI5OSA4Mi4zMzggODAuOTE3IDgyLjkxNy4zNjcuMDA1LjczMS4wMDcgMS4wOTguMDA3IDIxLjcwNS0uMDAxIDQyLjEyLTguMzcxIDU3LjU4OS0yMy42NDEgMTUuNzMyLTE1LjUyOSAyNC4zOTYtMzYuMjU1IDI0LjM5Ni01OC4zNTl6bS0zNDggNDJjLTQ2LjMxOCAwLTg0LTM3LjY4Mi04NC04NHMzNy42ODItODQgODQtODQgODQgMzcuNjgyIDg0IDg0LTM3LjY4MiA4NC04NCA4NHoiIGZpbGw9IiM2ZjZhNmEiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9zdmc+" /> Leo 10/5</span>
+                </div>
+
+            <div class="horLine"></div>
+            <div>
+                <h4><i class="fa fa-file-text" aria-hidden="true"></i> Qualification details :</h4>
+                <div style="line-height:20px;">
+                    <span><strong>Course:</strong> Banking</span>
+                    <span><strong>Institute:</strong> BSC Academy, Bhubaneswar</span>
+                    <span><strong>Year:</strong> 2018</span>
+                    <hr>
+                    <span><strong>Course:</strong> PGDCA</span>
+                    <span><strong>Institute:</strong> LCC, Bhubaneswar</span>
+                    <span><strong>Year:</strong> 2018</span>
+                    <hr>
+                    <span><strong>Course:</strong> B.com</span>
+                    <span><strong>College:</strong> Govindpur junior degree college, cuttack</span>
+                    <span><strong>Year:</strong> 2014-2017</span>
+                    <hr>
+                    <span><strong>Course:</strong> +2 </span>
+                    <span><strong>College:</strong> Govindpur junior degree college, cuttack</span>
+                    <span><strong>Year:</strong> 2012-2014</span>
+                    <hr>
+                    <span><strong>Course:</strong> 10th (Matric)</span>
+                    <span><strong>College:</strong> Gopinathjew H.s, Jagatsinghpur</span>
+                    <span><strong>Year:</strong> 2012</span>
+                </div>
+            </div>
+            <div class="horLine"></div>
+            <div>
+                <h4><i class="fa fa-home" aria-hidden="true"></i> Address Details :</h4>
+                <div style="line-height:20px;">
+                    <span><strong>At/Po:</strong> Parisankharisahi</span>
+                    <span><strong>PS:</strong> Birirdi</span>
+                    <span><strong>Block:</strong>Birirdi</span>
+                    <span><strong>Dist:</strong> Jagatsinghpur</span>
+                    <span><strong>State:</strong> Odisha</span>
+                    <span><strong>Zipcode:</strong> 754111</span>
+                </div>
+            </div>
+            <div class="horLine"></div>
+            <div>
+                <h4><i class="fa fa-address-card" aria-hidden="true"></i> Family Details :</h4>
+                <div style="line-height:20px;">
+                    <span><strong>Father's Name:</strong>Banshidhar Patra</span>
+                    <span>Electrician</span>
+                    <span><strong>Mother's Name:</strong> Sagarika Patra</span>
+                    <span>Home Maker</span>
+                    <span><strong>Brother's Name:</strong> Soumya Ranjan Patra</span>
+                    <span>Electrician</span>
+                    <span><strong>Brother's Name:</strong> Saubhagya Ranjan Patra</span>
+                    <span>Software Engineer</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="profileImg">
+
+    </div>
+    <br><br>
+</body>
+
+</html>
