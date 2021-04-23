@@ -3,102 +3,114 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tarun MeheR</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Homepage || Tarunmeher</title>
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <h3 class="logo">TaRun<span>Meher</span></h3>
-                <div class="hamburger-menu">
-                    <div class="bar"></div>
-                </div>
+    <div class="container">
+        <div class="icons">
+            <div class="icon"><i class="fa fa-cogs" aria-hidden="true"></i><br><br>Settings</div>
+            <div class="icon"><i class="fa fa-file" aria-hidden="true"></i><br><br>Files</div>
+            <div class="icon"><i class="fa fa-desktop" aria-hidden="true"></i><br><br>This PC</div>
+            <div class="icon"><i class="fa fa-quora" aria-hidden="true"></i><br><br>FAQ</div>
+        </div>
+        <div class="popupBox">
+            <div class="head">
+                <i class="fa fa-close cancelWP" aria-hidden="true" ></i>
             </div>
-        </nav>
-
-        <h1 class="big-title translate" data-speed="0.1">Explore it Now.</h1>
-
-        <img src="img/tarun.png" class="person translate" data-speed="-0.25" alt="">
-        <img src="img/mountain1.png" class="mountain1 translate" data-speed="-0.2" alt="">
-        <img src="img/mountain2.png" class="mountain2 translate" data-speed="0.4" alt="">
-        <img src="img/mountain3.png" class="mountain3 translate" data-speed="0.3" alt="">
-        <img src="img/sky.png" class="sky translate" data-speed="0.5" alt="">
-    </header>
-
-    <section>
-        <div class="shadow"></div>
-
-        <div class="container">
-            <div class="content opacity">
-                <h3 class="title">
-                    About Me
-                    <div class="border"></div>
-                </h3>
-                <p class="text">
-                    Hi, I am <b>Tarun Meher</b>. I am a Software Engineer, Having specilized in UI designing, Web
-                    Developer and GIS Developement. You can watch my Youtube tutorials video on many programming
-                    languages
-                    both in (Hindi/English).<br>
-                    Follow me on socila media accounts.<br>
-                    <a href="https://m.facebook.com/tarun.meher.96" target="_blank"><i class="fa fa-facebook-official"
-                            aria-hidden="true"></i></a>
-                    <a href="https://twitter.com/ImTR07" target="_blank"><i class="fa fa-twitter"
-                            aria-hidden="true"></i></a>
-                    <a href="https://www.instagram.com/tarun.coolboy" target="_blank"><i class="fa fa-instagram"
-                            aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/tarun-meher-595521100/" target="_blank"><i
-                            class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                </p>
-                <div class="skills">
-                    <div class="item">
-                        <div class="skills-progress">
-                            <h6>Web Design</h6>
-                            <span data-value="70%" style="width: 70%;"></span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="skills-progress">
-                            <h6>Web Developer</h6>
-                            <span data-value="90%" style="width: 90%;"></span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="skills-progress">
-                            <h6>GIS Specialization</h6>
-                            <span data-value="90%" style="width: 90%;"></span>
-                        </div>
+            <div class="content">
+                <div class="sidemenu"></div>
+                <div class="rightbox">
+                    <br>
+                    <hr>
+                    <div class="icons">
+                        <div class="iconimgs"><img src="img/default.jpg" alt="wp_default.jpg" srcset=""></div>
+                        <div class="iconimgs"><img src="img/window1.jpg" alt="window1.jpg" srcset=""></div>
+                        <div class="iconimgs"><img src="img/window2.jpg" alt="window2.jpg" srcset=""></div>
+                        <div class="iconimgs"><img src="img/tarun.jpg" alt="tarun.jpg" srcset=""></div>
+                        <div class="iconimgs"><img src="img/karishma.jpg" alt="karishma.jpg" srcset=""></div>
+                        <div class="iconimgs"><img src="img/reshma.jpg" alt="reshma.jpg" srcset=""></div>
                     </div>
                 </div>
             </div>
-
-            <div class="imgContainer opacity">
-                <img src="img/introimg.png" alt="">
+            <div class="foot">
+                <div style="float:right;width:560px;display:flex;justify-content: space-between;padding: 5px;">
+                    <div class="filename">
+                       <small>Filename</small> : <input type="text" name="name" id="filename" disabled>
+                    </div>
+                    <div class='buttons'>
+                        <button id='apply'>Apply</button>&nbsp;<button class='cancelWP'>Cancel</button>&nbsp;
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <div class='contacts'>
-        <h2 style='text-align: center;'>Contact Me</h2>
-        <div>
-            <input type="text" name="name" id="name" placeholder="Name">
-            <input type="text" name="email" id="email" placeholder="Email">
-        </div>
-        <div>
-            <textarea name="message" id="message" placeholder="Message"></textarea>
-        </div>
-        <div>
-            <button>Submit</button>
         </div>
     </div>
-    <footer style='background-color:rgba(0, 0, 0, 0.712);padding:10x;color:white;text-align:center;'>@copyright-2020 ||
-        Tarun Meher.</footer>
+    <div class="taskbar">
+        <div class="menu-button">
+            <i class="fa fa-windows" aria-hidden="true"></i>
+        </div>
+        <div class="searchbox">
+            <input type="text" class="search" placeholder="Search the web">
+        </div>
+    </div>
 
-    <script src="app.js"></script>
+    <div id="popup">
+        <span><u>V</u>iew&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></span>
+        <span>S<u>o</u>rt by&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></span>
+        <span onclick="reload();">R<u>e</u>fresh</span>
+        <hr>
+        <span><u>P</u>aste</span>
+        <span onclick="closepopup();">C<u>l</u>ose Popup</span>
+        <hr>
+        <span><u>D</u>isplay Setting&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></span>
+        <span id='wallpaper'>P<u>e</u>rsonalization&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></span>
+    </div>
+    <script>
+
+
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            $("#popup").css({
+                "position": "absolute",
+                "top": e.pageY - (200 / 18),
+                "left": e.pageX - (200 / 18)
+            });
+            $("#popup").show();
+        });
+
+        function reload() {
+            window.location.reload();
+        }
+        function closepopup() {
+            $("#popup").hide();
+        }
+
+        $(".iconimgs img").click(function(){
+            $("#filename").val($(this).attr('alt'));
+        });
+        $("#apply").click(function(){
+            if($("#filename").val()!=''){
+                $('body').css('background-image','url("img/'+$("#filename").val()+'")');
+            }else{
+               alert('select image');
+            }
+        });
+
+        $(".cancelWP").click(function(){
+            $(".popupBox").hide();
+        });
+        $("#wallpaper").click(function(){
+            $(".popupBox").show();
+            $("#popup").hide();
+        });
+
+
+    </script>
 </body>
 
 </html>
