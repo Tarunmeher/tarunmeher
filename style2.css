@@ -5,7 +5,7 @@ body {
     font-size: 14px;
     height: 100%;
     width: 100%;
-    background-image: url('img/window1.jpg');
+    background-image: url('./img/window1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
