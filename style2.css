@@ -5,7 +5,7 @@ body {
     font-size: 14px;
     height: 100%;
     width: 100%;
-    background-image: url('./img/window1.jpg');
+    background-image: url('img/window1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -147,6 +147,19 @@ body {
     top:20px;
     background-color: whitesmoke;
     display: none;
+}
+.startmenu{
+    position: absolute;
+    width:700px;
+    height:500px;
+    z-index:4;
+    bottom:50px;
+    filter: opacity(0.85);
+    display: none;
+}
+.startmenu img{
+    height: 100%;
+    width: 100%;
 }
 .head{
     height:20px;
