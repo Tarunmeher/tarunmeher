@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage || Tarunmeher</title>
     <link rel="stylesheet" href="./style2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <!--below cdn is used to make a div draggable-->
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -19,7 +21,10 @@
             <div class="icon"><i class="fa fa-desktop" aria-hidden="true"></i><br><br>This PC</div>
             <div class="icon"><i class="fa fa-quora" aria-hidden="true"></i><br><br>FAQ</div>
         </div>
-        <div class="popupBox">
+        <div class="startmenu">
+            <img src="./img/menu.png" alt="" srcset="">
+        </div>
+        <div class="popupBox draggable">
             <div class="head">
                 <i class="fa fa-close cancelWP" aria-hidden="true" ></i>
             </div>
@@ -29,7 +34,7 @@
                     <br>
                     <hr>
                     <div class="icons">
-                       <div class="iconimgs"><img src="./img/default.jpg" alt="wp_default.jpg" srcset=""></div>
+                        <div class="iconimgs"><img src="./img/default.jpg" alt="default.jpg" srcset=""></div>
                         <div class="iconimgs"><img src="./img/window1.jpg" alt="window1.jpg" srcset=""></div>
                         <div class="iconimgs"><img src="./img/window2.jpg" alt="window2.jpg" srcset=""></div>
                         <div class="iconimgs"><img src="./img/tarun.jpg" alt="tarun.jpg" srcset=""></div>
@@ -95,7 +100,7 @@
         });
         $("#apply").click(function(){
             if($("#filename").val()!=''){
-                $('body').css('background-image','url("img/'+$("#filename").val()+'")');
+                $('body').css('background-image','url("./img/'+$("#filename").val()+'")');
             }else{
                alert('select image');
             }
@@ -107,6 +112,15 @@
         $("#wallpaper").click(function(){
             $(".popupBox").show();
             $("#popup").hide();
+        });
+
+        //allow div to drag
+        $(function () {
+            $(".draggable").draggable();
+        });
+
+        $(".menu-button").click(function(){
+            $(".startmenu").toggle(100);
         });
 
 
